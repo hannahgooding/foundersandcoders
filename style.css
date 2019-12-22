@@ -7,10 +7,17 @@ body {
   margin: 20px;
 }
 
-#grid-layout {
+.grid-layout {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  grid-template-areas:
+    "profile-info"
+    "tagline"
+    "links"
+    "image-carousel"
+    "interests"
+    "about-me";
 }
 
 section {
@@ -21,7 +28,8 @@ section {
   text-align: left;
 }
 
-#profile-info {
+.profile-info {
+  grid-area: profile-info;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "h1 h1" "pic info";
@@ -42,16 +50,42 @@ section {
   grid-area: info;
 }
 
-#links li {
+.tagline {
+  grid-area: tagline;
+}
+
+.links {
+  grid-area: links;
+}
+
+.links li {
   list-style-type: none;
+}
+
+.image-carousel {
+  grid-area: image-carousel;
+}
+
+.interests {
+  grid-area: interests;
+}
+
+.about-me {
+  grid-area: about-me;
 }
 
 @media only screen and (min-width: 768px) {
   body {
     margin: 30px;
   }
-  #grid-layout {
+  .grid-layout {
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, 1auto);
+    grid-template-areas:
+      "profile-info tagline"
+      "profile-info image-carousel"
+      "links image-carousel"
+      "interests about-me";
     grid-gap: 30px;
   }
 }
@@ -60,7 +94,7 @@ section {
   body {
     margin: 40px;
   }
-  #grid-layout {
+  .grid-layout {
     grid-gap: 40px;
   }
 }
