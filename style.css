@@ -120,6 +120,13 @@ section {
   right: 20px;
 }
 
+#play-button {
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  bottom: 15px;
+  right: 50%;
+}
+
 .caption {
   color: #000;
   background-color: #fff;
