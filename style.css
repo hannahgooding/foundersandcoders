@@ -17,7 +17,8 @@ body {
     "links"
     "image-carousel"
     "interests"
-    "about-me";
+    "about-me"
+    "footer";
 }
 
 section {
@@ -74,6 +75,10 @@ section {
   grid-area: about-me;
 }
 
+footer {
+  grid-area: footer;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     margin: 30px;
@@ -85,7 +90,8 @@ section {
       "profile-info tagline"
       "profile-info image-carousel"
       "links image-carousel"
-      "interests about-me";
+      "interests about-me"
+      "footer footer";
     grid-gap: 30px;
   }
 }
