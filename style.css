@@ -100,6 +100,26 @@ section {
   background-image: url("images/image3.jpg");
 }
 
+.button {
+  cursor: pointer;
+  border-style: solid;
+  position: absolute;
+}
+
+#arrow-left {
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  top: 50%;
+  left: 20px;
+}
+
+#arrow-right {
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  top: 50%;
+  right: 20px;
+}
+
 .caption {
   color: #000;
   background-color: #fff;
