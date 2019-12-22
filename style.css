@@ -36,7 +36,7 @@ section {
   grid-gap: 1em;
 }
 
-#profile-info h1 {
+.profile-info h1 {
   grid-area: h1;
 }
 
