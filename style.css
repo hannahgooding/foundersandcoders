@@ -7,6 +7,12 @@ body {
   margin: 20px;
 }
 
+#grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
 section {
   padding: 10px;
   height: auto;
