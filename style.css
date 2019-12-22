@@ -25,6 +25,11 @@ section {
   list-style-type: none;
 }
 
+#profile-pic {
+  height: 200px;
+  width: 200px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     margin: 30px;
