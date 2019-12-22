@@ -21,13 +21,29 @@ section {
   text-align: left;
 }
 
-#links li {
-  list-style-type: none;
+#profile-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "h1 h1" "pic info";
+  grid-gap: 1em;
+}
+
+#profile-info h1 {
+  grid-area: h1;
 }
 
 #profile-pic {
   height: 200px;
   width: 200px;
+  grid-area: pic;
+}
+
+#info {
+  grid-area: info;
+}
+
+#links li {
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) {
