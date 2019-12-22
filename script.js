@@ -47,3 +47,14 @@ previousArrow.addEventListener("click", function(){
     imageInterval = setInterval(nextImage, intervalTime);
   }
 });
+
+document.onkeydown = function(e){
+  switch(e.keyCode){
+    case 37:
+      prevImage();
+      break;
+    case 39:
+      nextImage();
+      break;
+  }
+};
