@@ -21,6 +21,10 @@ section {
   text-align: left;
 }
 
+#links li {
+  list-style-type: none;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     margin: 30px;
