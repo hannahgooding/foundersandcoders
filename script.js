@@ -32,6 +32,22 @@ function prevImage(){
   setTimeout(function(){ current.classList.remove("current") });
 };
 
+function playImages(){
+  const playButton = document.getElementById("play-button");
+  playButton.classList.remove("button");
+  playButton.classList.add("pause-button");
+  imageInterval = setInterval(nextImage, intervalTime); // run next image at interval time
+};
+
+function pauseImages(){
+  const playButton = document.getElementById("play-button");
+  playButton.classList.remove("pause-button");
+  playButton.classList.add("button");
+  clearInterval(imageInterval);
+};
+
+// event listeners
+
 nextArrow.addEventListener("click", function(){
   nextImage();
   if(auto){
@@ -48,12 +64,24 @@ previousArrow.addEventListener("click", function(){
   }
 });
 
+playPause.addEventListener("click", function(){
+  if(auto) {
+    pauseImages();
+    auto = false;
+  } else {
+    playImages();
+    auto = true;
+  }
+});
+
+// keyboard navigation
+
 document.onkeydown = function(e){
   switch(e.keyCode){
-    case 37:
+    case 37: // left arrow key
       prevImage();
       break;
-    case 39:
+    case 39: // right arrow key
       nextImage();
       break;
   }

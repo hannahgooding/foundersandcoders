@@ -127,6 +127,16 @@ section {
   right: 50%;
 }
 
+.pause-button {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-color: #fff;
+  position: absolute;
+  border-style: double;
+  border-width: 0px 0px 0px 20px !important;
+}
+
 .caption {
   color: #000;
   background-color: #fff;
