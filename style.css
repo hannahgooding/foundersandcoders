@@ -23,7 +23,7 @@ body {
 
 section {
   padding: 10px;
-  height: auto;
+  height: min-content;
   border-style: solid;
   border-width: 0.2em;
   text-align: left;
@@ -162,7 +162,7 @@ footer {
   }
   .grid-layout {
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: repeat(4, 1auto);
+    grid-auto-rows: min-content;
     grid-template-areas:
       "profile-info tagline"
       "profile-info image-carousel"
