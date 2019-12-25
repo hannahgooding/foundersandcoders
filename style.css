@@ -7,30 +7,17 @@ body {
   margin: 20px;
 }
 
-.grid-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-    "profile-info"
-    "tagline"
-    "links"
-    "image-carousel"
-    "interests"
-    "about-me"
-    "footer";
-}
-
 section {
   padding: 10px;
+  margin-bottom: 10px;
   height: min-content;
+  break-inside: avoid;
   border-style: solid;
   border-width: 0.2em;
   text-align: left;
 }
 
 .profile-info {
-  grid-area: profile-info;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "h1 h1" "pic info";
@@ -52,11 +39,9 @@ section {
 }
 
 .tagline {
-  grid-area: tagline;
 }
 
 .links {
-  grid-area: links;
 }
 
 .links li {
@@ -64,7 +49,6 @@ section {
 }
 
 .image-carousel {
-  grid-area: image-carousel;
 }
 
 .carousel {
@@ -145,15 +129,12 @@ section {
 }
 
 .interests {
-  grid-area: interests;
 }
 
 .about-me {
-  grid-area: about-me;
 }
 
 footer {
-  grid-area: footer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,15 +142,11 @@ footer {
     margin: 30px;
   }
   .grid-layout {
-    grid-template-columns: 2fr 3fr;
-    grid-auto-rows: min-content;
-    grid-template-areas:
-      "profile-info tagline"
-      "profile-info image-carousel"
-      "links image-carousel"
-      "interests about-me"
-      "footer footer";
-    grid-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
+  }
+  section {
+    margin-bottom: 30px;
   }
 }
 
@@ -178,6 +155,9 @@ footer {
     margin: 40px;
   }
   .grid-layout {
-    grid-gap: 40px;
+    column-gap: 40px;
+  }
+  section {
+    margin-bottom: 40px;
   }
 }
