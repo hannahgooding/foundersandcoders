@@ -55,13 +55,13 @@ section {
   position: relative;
   background-color: #000;
   height: 500px;
-  width: 700px;
+  width: auto;
 }
 
 .image {
   position: absolute;
   height: 400px;
-  width: 600px;
+  width: auto;
   margin: 50px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
