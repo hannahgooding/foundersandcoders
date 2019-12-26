@@ -3,8 +3,11 @@
 }
 
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   margin: 20px;
+  background-image: url("http://dl.glitter-graphics.com/pub/3478/3478375qc8mwc3b5d.gif");
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 section {
@@ -12,8 +15,10 @@ section {
   margin-bottom: 10px;
   height: min-content;
   break-inside: avoid;
+  background-color: #fff;
   border-style: solid;
-  border-width: 0.2em;
+  border-width: 0.5em;
+  border-color: #ffc856;
   text-align: left;
 }
 
@@ -53,7 +58,7 @@ section {
 
 .carousel {
   position: relative;
-  background-color: #000;
+  background-color: #fff;
   height: 500px;
   width: auto;
 }
@@ -92,21 +97,21 @@ section {
 
 #arrow-left {
   border-width: 10px 20px 10px 0;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #ffc856 transparent transparent;
   top: 50%;
   left: 20px;
 }
 
 #arrow-right {
   border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #ffc856;
   top: 50%;
   right: 20px;
 }
 
 #play-button {
   border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #ffc856;
   bottom: 15px;
   right: 50%;
 }
@@ -115,7 +120,7 @@ section {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  border-color: #fff;
+  border-color: #ffc856;
   position: absolute;
   border-style: double;
   border-width: 0px 0px 0px 20px !important;
@@ -123,7 +128,7 @@ section {
 
 .caption {
   color: #000;
-  background-color: #fff;
+  background-color: #ffccee;
   text-align: center;
   padding: 10px;
 }
