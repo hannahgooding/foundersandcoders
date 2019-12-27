@@ -47,7 +47,8 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "h1 h1" "pic info";
-  grid-gap: 1em;
+  grid-column-gap: 1em;
+  padding: 10px;
 }
 
 .profile-info h1 {
@@ -64,7 +65,14 @@ section {
   grid-area: info;
 }
 
-.tagline {
+.status p {
+  margin: 10px;
+}
+
+.status img {
+  height: auto;
+  width: 2em;
+  vertical-align: middle;
 }
 
 .links {
