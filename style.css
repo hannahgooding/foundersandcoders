@@ -19,6 +19,16 @@ h2 {
   font-size: 1.1em;
 }
 
+a:link, a:visited {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ffc856;
+}
+
 section {
   margin-bottom: 10px;
   height: min-content;
@@ -70,6 +80,13 @@ section {
 .links li {
   grid-area: links;
   list-style-type: none;
+}
+
+.links img {
+  height: auto;
+  width: 1.5em;
+  margin: 5px;
+  vertical-align: middle;
 }
 
 .image-carousel {
