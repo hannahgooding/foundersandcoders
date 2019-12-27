@@ -4,10 +4,19 @@
 
 body {
   font-family: "Inconsolata", monospace;
+  font-size: 1em;
   margin: 20px;
   background-image: url("http://dl.glitter-graphics.com/pub/3478/3478375qc8mwc3b5d.gif");
   background-attachment: fixed;
   background-repeat: repeat;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.1em;
 }
 
 section {
@@ -47,9 +56,18 @@ section {
 }
 
 .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "h2 h2" "links links";
+  grid-gap: 1em;
+}
+
+.links h2 {
+  grid-area: h2;
 }
 
 .links li {
+  grid-area: links;
   list-style-type: none;
 }
 
