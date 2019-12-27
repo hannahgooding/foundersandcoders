@@ -43,6 +43,12 @@ section {
   text-align: left;
 }
 
+iframe {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
 .profile-info {
   display: grid;
   grid-template-columns: 1fr 2fr;
