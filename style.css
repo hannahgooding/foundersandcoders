@@ -17,6 +17,9 @@ h1 {
 
 h2 {
   font-size: 1.1em;
+  background-color: #ffc856;
+  padding: 2px;
+  margin: 0;
 }
 
 a:link, a:visited {
@@ -72,9 +75,6 @@ section {
 
 .links h2 {
   grid-area: h2;
-  background-color: #ffc856;
-  padding: 2px;
-  margin: 0;
 }
 
 .links li {
@@ -87,6 +87,24 @@ section {
   width: 1.5em;
   margin: 5px;
   vertical-align: middle;
+}
+
+table {
+  padding: 10px;
+  width: 100%;
+  border-spacing: 5px;
+}
+
+td {
+  background-color: #ffccee;
+}
+
+.bold {
+  font-weight: bold;
+  background-color: #ffc856;
+}
+
+.about-me {
 }
 
 .image-carousel {
@@ -167,12 +185,6 @@ section {
   background-color: #ffccee;
   text-align: center;
   padding: 10px;
-}
-
-.interests {
-}
-
-.about-me {
 }
 
 footer {
