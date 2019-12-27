@@ -20,7 +20,6 @@ h2 {
 }
 
 section {
-  padding: 10px;
   margin-bottom: 10px;
   height: min-content;
   break-inside: avoid;
@@ -59,11 +58,13 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "h2 h2" "links links";
-  grid-gap: 1em;
 }
 
 .links h2 {
   grid-area: h2;
+  background-color: #ffc856;
+  padding: 2px;
+  margin: 0;
 }
 
 .links li {
