@@ -1,3 +1,5 @@
+// *IMAGE CAROUSEL*
+
 // initialising variables
 
 const images = document.querySelectorAll(".image") // select multiple elements with specfied class and put them in a node list
@@ -86,3 +88,21 @@ document.onkeydown = function(e){
       break;
   }
 };
+
+
+// * ACCORDION *
+
+// initialise variable
+const accordions = document.getElementsByClassName("tab-title"); // select elements with class name tab-title and put them into an array
+
+// set up for loop to loop through accordions array
+for (let i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function () {
+    const content = this.nextElementSibling; // check the next element which is the tab-content
+    if (content.style.maxHeight) { // if the maxheight has a value then the accordion is open
+      content.style.maxHeight = null; // then we close it
+    } else { // if the maxheight does not have a value then the accordion is closed
+      content.style.maxHeight = content.scrollHeight + "px"; // set maxheight to the height of the actual content in pixels
+    }
+  }
+}

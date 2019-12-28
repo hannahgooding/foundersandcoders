@@ -123,12 +123,10 @@ td {
 }
 
 .coding-journey {
-
 }
 
 .accordion {
   margin: 10px;
-  overflow: hidden;
 }
 
 .accordion > button.tab-title {
@@ -151,6 +149,10 @@ td {
   background-color: whitesmoke;
   font-size: 0.9em;
   max-height: 0;
+  overflow: hidden;
+}
+
+.accordion > .tab-content p {
   overflow: hidden;
 }
 
