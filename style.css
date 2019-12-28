@@ -135,6 +135,7 @@ td {
   font-weight: bold;
   width: 100%;
   padding: 0.5em;
+  margin: 1px;
   background-color: #ffccee;
   border: none;
   text-align: left;
@@ -155,7 +156,6 @@ td {
 
 .accordion > .tab-content {
   padding: 0 10px 0 10px;
-  background-color: whitesmoke;
   font-size: 0.9em;
   max-height: 0;
   overflow: hidden;
