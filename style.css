@@ -129,6 +129,10 @@ td {
   margin: 10px;
 }
 
+.accordion > button:focus {
+  outline: none;
+}
+
 .accordion > button.tab-title {
   font-family: "Inconsolata", monospace;
   font-size: 1em;
@@ -139,6 +143,7 @@ td {
   background-color: #ffccee;
   border: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .accordion > button.tab-title:hover {
