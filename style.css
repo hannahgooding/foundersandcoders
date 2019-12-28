@@ -122,11 +122,16 @@ td {
 .about-me {
 }
 
-.accordion {
-  padding: 10px;
+.coding-journey {
+
 }
 
-button.tab-title {
+.accordion {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.accordion > button.tab-title {
   font-family: "Inconsolata", monospace;
   font-size: 1em;
   font-weight: bold;
@@ -137,14 +142,16 @@ button.tab-title {
   text-align: left;
 }
 
-button.tab-title:hover {
-  opacity: 0.5;
+.accordion > button.tab-title:hover {
+  background-color: #ff66cc;
 }
 
-.tab-content {
+.accordion > .tab-content {
   padding: 0 10px 0 10px;
   background-color: whitesmoke;
   font-size: 0.9em;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .image-carousel {
