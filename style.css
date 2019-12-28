@@ -144,6 +144,11 @@ td {
   background-color: #ff66cc;
 }
 
+.accordion > button.tab-title:after {
+  content: "+";
+  float: right;
+}
+
 .accordion > .tab-content {
   padding: 0 10px 0 10px;
   background-color: whitesmoke;
