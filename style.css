@@ -122,6 +122,31 @@ td {
 .about-me {
 }
 
+.accordion {
+  padding: 10px;
+}
+
+button.tab-title {
+  font-family: "Inconsolata", monospace;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5em;
+  background-color: #ffccee;
+  border: none;
+  text-align: left;
+}
+
+button.tab-title:hover {
+  opacity: 0.5;
+}
+
+.tab-content {
+  padding: 0 10px 0 10px;
+  background-color: whitesmoke;
+  font-size: 0.9em;
+}
+
 .image-carousel {
 }
 
