@@ -98,6 +98,7 @@ const accordions = document.getElementsByClassName("tab-title"); // select eleme
 // set up for loop to loop through accordions array
 for (let i = 0; i < accordions.length; i++) {
   accordions[i].onclick = function () {
+    this.classList.toggle("active"); // adds the class active to the open tab and css turns the + symbol to the - symbol
     const content = this.nextElementSibling; // check the next element which is the tab-content
     if (content.style.maxHeight) { // if the maxheight has a value then the accordion is open
       content.style.maxHeight = null; // then we close it

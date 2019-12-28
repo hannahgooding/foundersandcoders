@@ -149,6 +149,10 @@ td {
   float: right;
 }
 
+.accordion > button.tab-title.active:after {
+  content: "-";
+}
+
 .accordion > .tab-content {
   padding: 0 10px 0 10px;
   background-color: whitesmoke;
