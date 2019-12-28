@@ -145,8 +145,6 @@ button.tab-title:hover {
   padding: 0 10px 0 10px;
   background-color: whitesmoke;
   font-size: 0.9em;
-  max-height: 0;
-  overflow: hidden;
 }
 
 .image-carousel {
