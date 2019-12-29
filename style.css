@@ -170,19 +170,20 @@ td {
   overflow: hidden;
 }
 
-.image-carousel {
+.image-carousel > p {
+  margin: 25px 50px 0px 50px;
 }
 
 .image-carousel .carousel {
   position: relative;
   background-color: #fff;
-  height: 500px;
+  height: 350px;
   width: auto;
 }
 
 .image-carousel .image {
   position: absolute;
-  height: 400px;
+  height: 250px;
   width: auto;
   margin: 50px;
   opacity: 0;
@@ -256,8 +257,9 @@ td {
   color: #000;
   background-color: #ffccee;
   text-align: center;
-  opacity: 0.8;
-  padding: 1px;
+  opacity: 0.9;
+  padding: 1px 20px 1px 20px;
+  font-size: 0.85em;
 }
 
 footer {
@@ -287,5 +289,14 @@ footer {
   }
   section {
     margin-bottom: 40px;
+  }
+  .image-carousel .carousel {
+    height: 500px;
+  }
+  .image-carousel .image {
+    height: 400px;
+  }
+  .image-carousel .caption {
+    font-size: 1em;
   }
 }
