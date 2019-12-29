@@ -22,6 +22,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.1em;
+  background-color: #ffc856;
+  padding: 2px;
+}
+
 a:link, a:visited {
   font-weight: bold;
   color: #000;
@@ -120,6 +126,7 @@ td {
 }
 
 .about-me {
+  padding: 10px 20px 10px 20px;
 }
 
 .coding-journey {
