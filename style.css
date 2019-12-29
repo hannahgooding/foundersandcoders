@@ -197,13 +197,22 @@ td {
 }
 
 .image:first-child {
-  background-image: url("images/image1.jpg");
+  background-image: url("images/carousel/image1.jpg");
 }
 .image:nth-child(2) {
-  background-image: url("images/image2.jpg");
+  background-image: url("images/carousel/image2.jpg");
 }
 .image:nth-child(3) {
-  background-image: url("images/image3.jpg");
+  background-image: url("images/carousel/image3.jpg");
+}
+.image:nth-child(4) {
+  background-image: url("images/carousel/image4.jpg");
+}
+.image:nth-child(5) {
+  background-image: url("images/carousel/image5.jpg");
+}
+.image:nth-child(6) {
+  background-image: url("images/carousel/image6.jpg");
 }
 
 .button {
@@ -247,7 +256,8 @@ td {
   color: #000;
   background-color: #ffccee;
   text-align: center;
-  padding: 10px;
+  opacity: 0.8;
+  padding: 1px;
 }
 
 footer {
