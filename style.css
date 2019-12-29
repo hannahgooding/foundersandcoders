@@ -173,14 +173,14 @@ td {
 .image-carousel {
 }
 
-.carousel {
+.image-carousel .carousel {
   position: relative;
   background-color: #fff;
   height: 500px;
   width: auto;
 }
 
-.image {
+.image-carousel .image {
   position: absolute;
   height: 400px;
   width: auto;
@@ -192,57 +192,57 @@ td {
   background-repeat: no-repeat;
 }
 
-.image.current {
+.image-carousel .image.current {
   opacity: 1;
 }
 
-.image:first-child {
+.image-carousel .image:first-child {
   background-image: url("images/carousel/image1.jpg");
 }
-.image:nth-child(2) {
+.image-carousel .image:nth-child(2) {
   background-image: url("images/carousel/image2.jpg");
 }
-.image:nth-child(3) {
+.image-carousel .image:nth-child(3) {
   background-image: url("images/carousel/image3.jpg");
 }
-.image:nth-child(4) {
+.image-carousel .image:nth-child(4) {
   background-image: url("images/carousel/image4.jpg");
 }
-.image:nth-child(5) {
+.image-carousel .image:nth-child(5) {
   background-image: url("images/carousel/image5.jpg");
 }
-.image:nth-child(6) {
+.image-carousel .image:nth-child(6) {
   background-image: url("images/carousel/image6.jpg");
 }
 
-.button {
+.image-carousel .button {
   cursor: pointer;
   border-style: solid;
   position: absolute;
 }
 
-#arrow-left {
+.image-carousel #arrow-left {
   border-width: 10px 20px 10px 0;
   border-color: transparent #ffc856 transparent transparent;
   top: 50%;
   left: 20px;
 }
 
-#arrow-right {
+.image-carousel #arrow-right {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ffc856;
   top: 50%;
   right: 20px;
 }
 
-#play-button {
+.image-carousel #play-button {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ffc856;
   bottom: 15px;
   right: 50%;
 }
 
-.pause-button {
+.image-carousel .pause-button {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -252,7 +252,7 @@ td {
   border-width: 0px 0px 0px 20px !important;
 }
 
-.caption {
+.image-carousel .caption {
   color: #000;
   background-color: #ffccee;
   text-align: center;
