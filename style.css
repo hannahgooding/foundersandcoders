@@ -185,7 +185,7 @@ td {
   position: absolute;
   height: 250px;
   width: auto;
-  margin: 50px;
+  margin: 25px 50px 25px 50px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   background-size: cover;
@@ -239,7 +239,7 @@ td {
 .image-carousel #play-button {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ffc856;
-  bottom: 15px;
+  bottom: 40px;
   right: 50%;
 }
 
