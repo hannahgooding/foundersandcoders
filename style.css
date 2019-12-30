@@ -56,25 +56,14 @@ iframe {
 }
 
 .profile-info {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "h1 h1" "pic info";
-  grid-column-gap: 1em;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 }
 
-.profile-info h1 {
-  grid-area: h1;
-}
-
 .profile-info #profile-pic {
-  height: 150px;
-  width: 150px;
-  grid-area: pic;
-}
-
-.profile-info #info {
-  grid-area: info;
+  height: 200px;
+  width: 200px;
 }
 
 .status p {
@@ -286,9 +275,22 @@ footer {
   section {
     margin-bottom: 30px;
   }
+  .profile-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "h1 h1" "pic info";
+    grid-column-gap: 1em;
+  }
+  .profile-info h1 {
+    grid-area: h1;
+  }
   .profile-info #profile-pic {
     height: 200px;
     width: 200px;
+    grid-area: pic;
+  }
+  .profile-info #info {
+    grid-area: info;
   }
 }
 
