@@ -77,18 +77,8 @@ iframe {
 }
 
 .links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "h2 h2" "links links";
-}
-
-.links h2 {
-  grid-area: h2;
-}
-
-.links li {
-  grid-area: links;
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .links img {
@@ -291,6 +281,18 @@ footer {
   }
   .profile-info #info {
     grid-area: info;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h2 h2" "links links";
+  }
+  .links h2 {
+    grid-area: h2;
+  }
+  .links li {
+    grid-area: links;
+    list-style-type: none;
   }
 }
 
