@@ -190,21 +190,24 @@ table td.bold {
   border-style: solid;
   position: absolute;
 }
+.image-carousel .button:hover {
+  opacity: 0.8;
+}
 .image-carousel #arrow-left {
   border-width: 10px 20px 10px 0;
-  border-color: transparent #ffc856 transparent transparent;
+  border-color: transparent #fff transparent transparent;
   top: 50%;
   left: 20px;
 }
 .image-carousel #arrow-right {
   border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #ffc856;
+  border-color: transparent transparent transparent #fff;
   top: 50%;
   right: 20px;
 }
 .image-carousel #play-button {
   border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #ffc856;
+  border-color: transparent transparent transparent #fff;
   bottom: 20px;
   right: 50%;
 }
@@ -212,10 +215,13 @@ table td.bold {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  border-color: #ffc856;
+  border-color: #fff;
   position: absolute;
   border-style: double;
   border-width: 0px 0px 0px 20px !important;
+}
+.image-carousel .pause-button:hover {
+  opacity: 0.8;
 }
 .image-carousel .caption {
   color: #000;
