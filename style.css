@@ -9,7 +9,6 @@ body {
   background-image: url("http://dl.glitter-graphics.com/pub/3478/3478375qc8mwc3b5d.gif");
   background-attachment: fixed;
   background-repeat: repeat;
-  margin: 10px;
 }
 
 h1 {
@@ -206,7 +205,6 @@ footer {
 
 @media only screen and (min-width: 768px) {
   body {
-    margin: 20px;
     font-size: 1em;
   }
   .page-layout {
