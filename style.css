@@ -26,6 +26,7 @@ h3 {
   font-size: 1.1em;
   background-color: #ffc856;
   padding: 2px;
+  margin: 10px 0px 10px 0px;
 }
 p {
   padding: 5px;
@@ -235,6 +236,7 @@ table td.bold {
 footer {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
