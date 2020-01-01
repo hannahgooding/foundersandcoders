@@ -5,23 +5,23 @@
 body {
   font-family: "Inconsolata", monospace;
   font-size: 0.8em;
-  margin: 20px;
+  text-align: left;
   background-image: url("http://dl.glitter-graphics.com/pub/3478/3478375qc8mwc3b5d.gif");
   background-attachment: fixed;
   background-repeat: repeat;
+  margin: 10px;
 }
 
 h1 {
   font-size: 1.5em;
 }
-
 h2 {
   font-size: 1.1em;
   background-color: #ffc856;
   padding: 2px;
   margin: 0;
+  top: 0;
 }
-
 h3 {
   font-size: 1.1em;
   background-color: #ffc856;
@@ -33,41 +33,29 @@ a:link, a:visited {
   color: #000;
   text-decoration: none;
 }
-
 a:hover {
   background-color: #ffc856;
 }
 
 section {
-  margin-bottom: 10px;
-  height: min-content;
-  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-style: solid;
   border-width: 0.5em;
   border-color: #ffc856;
-  text-align: left;
+  padding: 10px;
+  margin: 10px;
 }
 
 iframe {
   width: 100%;
   height: auto;
-  padding: 5px;
-}
-
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
 }
 
 .profile-info #profile-pic {
   height: 200px;
   width: 200px;
-}
-
-.status p {
-  margin: 10px;
 }
 
 .status img {
@@ -76,21 +64,9 @@ iframe {
   vertical-align: middle;
 }
 
-.links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "h2 h2" "links links";
-}
-
-.links h2 {
-  grid-area: h2;
-}
-
 .links li {
-  grid-area: links;
   list-style-type: none;
 }
-
 .links img {
   height: auto;
   width: 1.5em;
@@ -99,100 +75,71 @@ iframe {
 }
 
 table {
-  padding: 10px;
-  width: 100%;
   border-spacing: 5px;
 }
-
-td {
+table td {
   background-color: #ffccee;
   padding: 5px;
 }
-
-.bold {
+table td.bold {
   font-weight: bold;
   background-color: #ffc856;
-}
-
-.about-me {
-  padding: 10px 20px 10px 20px;
-}
-
-.coding-journey {
-}
-
-.accordion {
-  margin: 10px;
 }
 
 .accordion > button:focus {
   outline: none;
 }
-
 .accordion > button.tab-title {
   font-family: "Inconsolata", monospace;
   font-size: 1em;
   font-weight: bold;
   width: 100%;
   padding: 0.5em;
-  margin: 1px;
+  margin: 0 0 2px 0;
   background-color: #ffccee;
   border: none;
   text-align: left;
   cursor: pointer;
 }
-
 .accordion > button.tab-title:hover {
   background-color: #ff66cc;
 }
-
 .accordion > button.tab-title:after {
   content: "+";
   float: right;
 }
-
 .accordion > button.tab-title.active:after {
   content: "-";
 }
-
 .accordion > .tab-content {
   padding: 0 10px 0 10px;
   font-size: 0.9em;
   max-height: 0;
   overflow: hidden;
 }
-
 .accordion > .tab-content p {
   overflow: hidden;
-}
-
-.image-carousel > p {
-  margin: 25px 50px 0px 50px;
 }
 
 .image-carousel .carousel {
   position: relative;
   background-color: #fff;
-  height: 350px;
+  height: 250px;
   width: auto;
 }
-
 .image-carousel .image {
   position: absolute;
   height: 250px;
   width: auto;
-  margin: 25px 50px 25px 50px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .image-carousel .image.current {
   opacity: 1;
 }
-
 .image-carousel .image:first-child {
   background-image: url("images/carousel/image1.jpg");
 }
@@ -211,34 +158,29 @@ td {
 .image-carousel .image:nth-child(6) {
   background-image: url("images/carousel/image6.jpg");
 }
-
 .image-carousel .button {
   cursor: pointer;
   border-style: solid;
   position: absolute;
 }
-
 .image-carousel #arrow-left {
   border-width: 10px 20px 10px 0;
   border-color: transparent #ffc856 transparent transparent;
   top: 50%;
   left: 20px;
 }
-
 .image-carousel #arrow-right {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ffc856;
   top: 50%;
   right: 20px;
 }
-
 .image-carousel #play-button {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ffc856;
-  bottom: 40px;
+  bottom: 20px;
   right: 50%;
 }
-
 .image-carousel .pause-button {
   cursor: pointer;
   width: 20px;
@@ -248,7 +190,6 @@ td {
   border-style: double;
   border-width: 0px 0px 0px 20px !important;
 }
-
 .image-carousel .caption {
   color: #000;
   background-color: #ffccee;
@@ -265,50 +206,53 @@ footer {
 
 @media only screen and (min-width: 768px) {
   body {
-    margin: 30px;
+    margin: 20px;
     font-size: 1em;
   }
-  .grid-layout {
-    column-count: 2;
-    column-gap: 30px;
+  .page-layout {
+    display: flex;
+    flex-direction: row;
+  }
+  .column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
   section {
-    margin-bottom: 30px;
+    margin: 20px;
   }
   .profile-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content;
     grid-template-areas: "h1 h1" "pic info";
-    grid-column-gap: 1em;
+    grid-gap: 10px;
   }
   .profile-info h1 {
     grid-area: h1;
   }
   .profile-info #profile-pic {
     height: 200px;
-    width: 200px;
+    width: auto;
     grid-area: pic;
   }
   .profile-info #info {
     grid-area: info;
   }
+  .image-carousel .carousel {
+    height: 350px;
+  }
+  .image-carousel .image {
+    height: 350px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  body {
-    margin: 40px;
-  }
-  .grid-layout {
-    column-gap: 40px;
-  }
-  section {
-    margin-bottom: 40px;
-  }
   .image-carousel .carousel {
     height: 500px;
   }
   .image-carousel .image {
-    height: 400px;
+    height: 500px;
   }
   .image-carousel .caption {
     font-size: 1em;
